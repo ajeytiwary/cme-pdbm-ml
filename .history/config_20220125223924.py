@@ -26,7 +26,7 @@ DATA_PATH = PATH.joinpath("./").resolve()
 path= str(PATH)
 # path = os.path.relpath('/data/cme_dat/')
 
-path = os.path.dirname(os.path.abspath(__file__))
+# path = os.path.dirname(os.path.abspath(__file__))
 # PARENT_DIR = os.path.join(FILE_DIR, 'data/cme_dat/') 
 
 # dir_of_interest = os.path.join(PARENT_DIR, 'data')

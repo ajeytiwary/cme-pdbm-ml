@@ -1,5 +1,5 @@
 import os
-import pathlib
+# import pathlib
 # Replace with the name of your Dash app
 # This will end up being part of the URL of your deployed app,
 # so it can't contain any spaces, capitalizations, or special characters
@@ -20,21 +20,20 @@ DASH_APP_PRIVACY = 'public'
 PATH_BASED_ROUTING = True
 
 
-PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("./").resolve()
+# PATH = pathlib.Path(__file__).parent
+# DATA_PATH = PATH.joinpath("data/cme_dat/").resolve()
 
-path= str(PATH)
 # path = os.path.relpath('/data/cme_dat/')
 
 path = os.path.dirname(os.path.abspath(__file__))
 # PARENT_DIR = os.path.join(FILE_DIR, 'data/cme_dat/') 
 
 # dir_of_interest = os.path.join(PARENT_DIR, 'data')
-mid_path = '/data/cme_dat/'
-earth_cme_path = path + mid_path + 'cme_dat1/'
-path_cme_soho = path + mid_path +'cme_dat2/'
-path_helcats = path + mid_path +'cme_dat3/'
-dbm_path = path + mid_path +'cme_dat4/'
+
+earth_cme_path = path + '/cme_dat/cme_dat1/'
+path_cme_soho = path + '/cme_dat/cme_dat2/'
+path_helcats = path + '/cme_dat/cme_dat3/'
+dbm_path = path + '/cme_dat/cme_dat4/'
 
 
 # print(dbm_path)

@@ -37,4 +37,4 @@ path_helcats = path + mid_path +'cme_dat3/'
 dbm_path = path + mid_path +'cme_dat4/'
 
 
-# print(dbm_path)
+print(dbm_path)
