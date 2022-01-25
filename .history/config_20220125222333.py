@@ -1,5 +1,5 @@
 import os
-# import pathlib
+import pathlib
 # Replace with the name of your Dash app
 # This will end up being part of the URL of your deployed app,
 # so it can't contain any spaces, capitalizations, or special characters
@@ -23,12 +23,16 @@ PATH_BASED_ROUTING = True
 # PATH = pathlib.Path(__file__).parent
 # DATA_PATH = PATH.joinpath("data/cme_dat/").resolve()
 
-path = os.path.relpath('data/cme_dat/')
+path = os.path.relpath('./cme_dat/')
 
+# path = '/run/user/12096878/gvfs/sftp:host=juniper/export/scratch1/ajt/CME_playground/data/cme_dat/'
+# path = DATA_PATH
 
+# print(path)
 
-earth_cme_path = path + '/cme_dat1/'
-path_cme_soho = path + '/cme_dat2/'
-path_helcats = path + '/cme_dat3/'
-dbm_path = path + '/cme_dat4/'
+earth_cme_path = path + 'cme_dat1/'
+path_cme_soho = path + 'cme_dat2/'
+path_helcats = path + 'cme_dat3/'
+dbm_path = path + 'cme_dat4/'
 
+print(earth_cme_path)
