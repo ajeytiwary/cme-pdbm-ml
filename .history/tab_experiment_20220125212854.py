@@ -24,8 +24,8 @@ from load_dfs import load_dataframes
 
 
 
-# df_cme1,df_cme2,df_cme3,df_cme4  = load_dataframes()
-df_cme4  = load_dataframes()
+df_cme1,df_cme2,df_cme3,df_cme4  = load_dataframes()
+
 # df = df_cme4
 
 # columns = []
@@ -63,7 +63,8 @@ df_cme4  = load_dataframes()
 # available_indicators = df_plot.columns.unique()
 
 
-df_cme4  = load_dataframes()
+
+df_cme1,df_cme2,df_cme3,df_cme4  = load_dataframes()
 
 df = df_cme4
 

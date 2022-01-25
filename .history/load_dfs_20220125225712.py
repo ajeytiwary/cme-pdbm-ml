@@ -42,7 +42,7 @@ def load_dataframes():
 
 
 
-    return CME_dat4 
+    return CME_dat1, CME_dat2, CME_dat3, CME_dat4 
 
 
 def create_folders():

@@ -26,7 +26,9 @@ from controls import HALO_STATUS
 # halo_options = ['HH', 'FH', 'PH']
 from load_dfs import load_dataframes
 
-df_cme4  = load_dataframes()
+
+
+df_cme1,df_cme2,df_cme3,df_cme4  = load_dataframes()
 
 df = df_cme4
 
