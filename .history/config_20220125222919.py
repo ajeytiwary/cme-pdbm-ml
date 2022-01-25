@@ -23,17 +23,17 @@ PATH_BASED_ROUTING = True
 # PATH = pathlib.Path(__file__).parent
 # DATA_PATH = PATH.joinpath("data/cme_dat/").resolve()
 
-# path = os.path.relpath('/data/cme_dat/')
+path = os.path.relpath('/data/cme_dat/')
 
-path = os.path.dirname(os.path.abspath(__file__))
-# PARENT_DIR = os.path.join(FILE_DIR, 'data/cme_dat/') 
+FILE_DIR = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.join(FILE_DIR, 'data/cme_dat/') 
 
-# dir_of_interest = os.path.join(PARENT_DIR, 'data')
+dir_of_interest = os.path.join(PARENT_DIR, 'data')
 
-earth_cme_path = path + '/cme_dat/cme_dat1/'
-path_cme_soho = path + '/cme_dat/cme_dat2/'
-path_helcats = path + '/cme_dat/cme_dat3/'
-dbm_path = path + '/cme_dat/cme_dat4/'
+earth_cme_path = path + '/cme_dat1/'
+path_cme_soho = path + '/cme_dat2/'
+path_helcats = path + '/cme_dat3/'
+dbm_path = path + '/cme_dat4/'
 
 
-# print(dbm_path)
+print(FILE_DIR +'cme_dat/cme_dat4/')
