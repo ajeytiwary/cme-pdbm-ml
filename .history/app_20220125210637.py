@@ -1,9 +1,9 @@
 ## sys loads
 import os
 import pathlib
-# import sys
-# from click import style
-# from nbformat import from_dict
+import sys
+from click import style
+from nbformat import from_dict
 import numpy as np
 import pandas as pd
 # import matplotlib.pyplot as plt
