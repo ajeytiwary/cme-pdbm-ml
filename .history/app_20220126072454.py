@@ -265,7 +265,7 @@ gif_player = gif.GifPlayer(gif='https://www.esa.int/var/esa/storage/images/esa_m
 title_header = html.Div(
                             [
                                 html.H1(
-                                    "CME-learn: an intearctive dashboard for P-DBM CME database to run ML Experiments",
+                                    "P-DBM CME database for Gradient Boosting experiments",
                                     style={"margin-bottom": "0px", },
                                 ),
                                 # dcc.Link(html.H5(
