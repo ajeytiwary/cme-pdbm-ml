@@ -1,8 +1,5 @@
-
-
-description_dict = {
-'CME_num': '("integer") progressive no. of CME',
-'LASCO_Start': '(datetime) Date of first appearance of CME in LASCOC2 coronograph',
+description_dict = dict{'CME_num': '("integer") progressive no. of CME'
+'LASCO_Start': '(datetime) Date of first appearance of CME in LASCO/C2 coronograph',
 'Start_Date': '(datetime) Date of CME transit at 20 solar radii',
 'Arrival_Date': '(datetime) Date of Plasma arrival at L1(ACE)',
 'PE_duration': '(hrs) duration of plasma disturbance at L1',
@@ -31,7 +28,7 @@ description_dict = {
 'filename': '(string) name of the file containing PDBM information from the statistical inversion procedure'}
 
 
-print( description_dict)
+
 
 
 

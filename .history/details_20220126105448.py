@@ -1,8 +1,6 @@
-
-
-description_dict = {
+description_dict = dict{
 'CME_num': '("integer") progressive no. of CME',
-'LASCO_Start': '(datetime) Date of first appearance of CME in LASCOC2 coronograph',
+'LASCO_Start': '(datetime) Date of first appearance of CME in LASCO/C2 coronograph',
 'Start_Date': '(datetime) Date of CME transit at 20 solar radii',
 'Arrival_Date': '(datetime) Date of Plasma arrival at L1(ACE)',
 'PE_duration': '(hrs) duration of plasma disturbance at L1',
@@ -28,10 +26,12 @@ description_dict = {
 'Accel':' (m/s ^ 2) CME acceleration between the lift-off and 20 solar radii',
 'Analityc_w':' (km/s) solar wind value obtained via analytic inversion of the Drag-Based Model equations',
 'Analityc_gamma': '(km ^ -1) value of the drag parameter obtained via analytic inversion of the Drag-Based Model equations',
-'filename': '(string) name of the file containing PDBM information from the statistical inversion procedure'}
+'filename': '(string) name of the file containing PDBM information from the statistical inversion procedure'
+
+}
 
 
-print( description_dict)
+
 
 
 

@@ -1,7 +1,4 @@
-
-
-description_dict = {
-'CME_num': '("integer") progressive no. of CME',
+description_dict = dict{'CME_num': '("integer") progressive no. of CME',
 'LASCO_Start': '(datetime) Date of first appearance of CME in LASCOC2 coronograph',
 'Start_Date': '(datetime) Date of CME transit at 20 solar radii',
 'Arrival_Date': '(datetime) Date of Plasma arrival at L1(ACE)',
@@ -13,7 +10,7 @@ description_dict = {
 'LASC0_v': '(km/s) linear speed of CMEs fastest component',
 'LASCO_pa': '(deg) CME principal angle, counterclockwise from North',
 'LASCO_da': '(deg) CME angular width',
-'LASCO_halo':" (string) 'FH' if LASCO_da > 270, 'HH' if LASCO_da > 180, 'PH' if LASC_da > 90, 'N' otherwise",
+# 'LASCO_halo':" (string) 'FH' if LASCO_da > 270, 'HH' if LASCO_da > 180, 'PH' if LASC_da > 90, 'N' otherwise",
 'v_r': '(km/s) radially de-projected CME speed',
 'v_r_err':' (km/s) uncertainty of the de-projected speed',
 'Theta_source': '(arcsec) longitude of the most probable source of the CME',
@@ -31,7 +28,7 @@ description_dict = {
 'filename': '(string) name of the file containing PDBM information from the statistical inversion procedure'}
 
 
-print( description_dict)
+
 
 
 

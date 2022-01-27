@@ -195,9 +195,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 
 
-app = dash.Dash( __name__, meta_tags=[{'name': 'viewport', 'content': 'width=device-width, '
-                       'initial-scale=1.0, maximum-scale=1.2, minimum-scale=0.5,'}])
-    # {"name": "viewport", "content": "width=device-width",  'initial-scale=1.0, maximum-scale=1.2, minimum-scale=0.5,'}])
+app = dash.Dash( __name__, meta_tags=[{"name": "viewport", "content": "width=device-width",  'initial-scale=1.0, maximum-scale=1.2, minimum-scale=0.5,'}])
                 # external_scripts=external_scripts,
                 # external_stylesheets=external_stylesheets
                 # )

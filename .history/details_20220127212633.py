@@ -13,7 +13,7 @@ description_dict = {
 'LASC0_v': '(km/s) linear speed of CMEs fastest component',
 'LASCO_pa': '(deg) CME principal angle, counterclockwise from North',
 'LASCO_da': '(deg) CME angular width',
-'LASCO_halo':" (string) 'FH' if LASCO_da > 270, 'HH' if LASCO_da > 180, 'PH' if LASC_da > 90, 'N' otherwise",
+# 'LASCO_halo':" (string) 'FH' if LASCO_da > 270, 'HH' if LASCO_da > 180, 'PH' if LASC_da > 90, 'N' otherwise",
 'v_r': '(km/s) radially de-projected CME speed',
 'v_r_err':' (km/s) uncertainty of the de-projected speed',
 'Theta_source': '(arcsec) longitude of the most probable source of the CME',
