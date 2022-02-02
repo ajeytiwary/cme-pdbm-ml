@@ -390,7 +390,7 @@ def experiment():
                 html.Div(id='params-table', ),
                               
                 ], 
-                 style ={'width': '10%', 'display': 'inline-block', 'position':'absolute', 'margin-bottom':'50px', 'margin-left':425, 'margin-top':-20}
+                 style ={'width': '10%', 'display': 'inline-block', 'position':'absolute', 'margin-bottom':'50px', 'margin-left':'480px', 'margin-top':-10}
                 #  style ={'width': '20%', 'display': 'inline-block', 'height': '20%', 'margin-top':'-30px'},
                 #  style = {'width': '20%', 'display': 'inline-block', 'marginBottom': 50, 'marginTop': -125}
                  ),

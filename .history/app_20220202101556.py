@@ -1,7 +1,6 @@
 ## sys loads
 import os
 import pathlib
-from click import style
 # import sys
 # from click import style
 # from nbformat import from_dict
@@ -390,20 +389,13 @@ app.layout = dbc.Container([
             html.Hr(style={'margin-top':30}),
         # dbc.Container(
         #     [
-            html.Div([dbc.Button("Instructions", id="open-centered"),
+            html.Div([dbc.Button("Instructions", id="button_mo"),
                 dbc.Modal(
                     [
-                        dbc.ModalHeader(dbc.ModalTitle("Readme!"), close_button=True),
-                        dbc.ModalBody(dcc.Markdown(text_markdown), style={"width": "100%"}),
-                        dbc.ModalFooter(dbc.Button(
-                                                    "Close",
-                                                    id="close-centered",
-                                                    className="ms-auto",
-                                                    n_clicks=0,
-                                                ),
-                                            ),
+                        dbc.ModalHeader("Readme!"),
+                        dbc.ModalBody(dcc.Markdown(text_markdown), style={"width": "50%"}),
                     ],
-                    id="modal-centered",
+                    id="modal",
                     is_open=False,
                     scrollable = True,
                     centered=True,
@@ -425,16 +417,16 @@ app.layout = dbc.Container([
         # html.Hr(),
         html.Div(id="tab-content"),
     ],
-    className='pretty container', fluid = True)
-@app.callback(
-        Output("modal-centered", "is_open"),
-        [Input("open-centered", "n_clicks"), Input("close-centered", "n_clicks")],
-        [State("modal-centered", "is_open")],
     )
-def toggle_modal(n1, n2, is_open):
-    if n1 or n2:
-        return not is_open
-    return is_open
+@app.callback(
+        Output("modal", "is_open"),
+        [Input("button_mo", "n_clicks")],
+        [State("modal", "is_open")],
+    )
+def toggle_modal(n, is_open):
+        if n:
+            return not is_open
+        return is_open
 
 
 @app.callback(
@@ -929,14 +921,10 @@ def update_graph(dataset, model_name, feature_columns, target_columns, degree, a
                         columns=[{'name': i, 'id': i} for i in keys],
                         data=df_params.to_dict('records'),
                         fixed_rows={'headers': True},
-                        style_cell={'textAlign':'left', 'minWidth': 15, 'maxWidth': 30, 'height': 'auto', 'lineHeight':'15px','overflowX': 'hidden', 'textOverflow': 'ellipsis'},
+                        style_cell={'textAlign':'left', 'minWidth': 95, 'width': 95},
                         style_header=dict(backgroundColor="paleturquoise"),
-                        style_data=dict(backgroundColor="lavender", whiteSpace = 'normal',height = 'auto'),
-                        style_table={'height': 300, 'width':450, 'marginTop' : 20, 'overflowX': 'scroll'},
-                        css=[{
-                                'selector': '.dash-cell div.dash-cell-value',
-                                'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
-                            }],
+                        style_data=dict(backgroundColor="lavender"),
+                        style_table={'height': 300, 'width':600, 'marginTop' : 30},
                         ),
          
     # pd.

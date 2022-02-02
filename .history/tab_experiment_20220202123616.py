@@ -390,27 +390,27 @@ def experiment():
                 html.Div(id='params-table', ),
                               
                 ], 
-                 style ={'width': '10%', 'display': 'inline-block', 'position':'absolute', 'margin-bottom':'50px', 'margin-left':425, 'margin-top':-20}
+                 style ={'width': '20%', 'display': 'inline-block', 'position':'absolute', 'margin-bottom':'50px', 'margin-left':'480px'}
                 #  style ={'width': '20%', 'display': 'inline-block', 'height': '20%', 'margin-top':'-30px'},
                 #  style = {'width': '20%', 'display': 'inline-block', 'marginBottom': 50, 'marginTop': -125}
                  ),
         
         ], style = {'display':'block'}),
 
-        # html.Spacer(style = {'padding':'60px'}),
+        html.Spacer(style = {'padding':'20px'}),
         
         # html.Div(children = data_table),#Dat_table), #id='CME_table',  className='tableDiv'),
         html.Div(className='three-columns',children=[
             graph_main,            
         ],
-                 style = {'width':'45%','display':'inline-block' ,'margin-top':'150px'}, 
+                 style = {'width':'45%','display':'inline-block' ,'margin-top':'90px'}, 
                  ),
         html.Spacer(style = {'padding':'60px'}),
 
         html.Div(className='three-columns',children=[
             graph_error,
         ],
-                 style = {'width':'45%','display':'inline-block' ,'margin-top':'150px'}, 
+                 style = {'width':'45%','display':'inline-block' ,'margin-top':'90px'}, 
                  ),
     ])
      return layout

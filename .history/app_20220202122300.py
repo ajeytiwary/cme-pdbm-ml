@@ -425,7 +425,7 @@ app.layout = dbc.Container([
         # html.Hr(),
         html.Div(id="tab-content"),
     ],
-    className='pretty container', fluid = True)
+    className='pretty container fourteen coulumns')
 @app.callback(
         Output("modal-centered", "is_open"),
         [Input("open-centered", "n_clicks"), Input("close-centered", "n_clicks")],
@@ -929,14 +929,10 @@ def update_graph(dataset, model_name, feature_columns, target_columns, degree, a
                         columns=[{'name': i, 'id': i} for i in keys],
                         data=df_params.to_dict('records'),
                         fixed_rows={'headers': True},
-                        style_cell={'textAlign':'left', 'minWidth': 15, 'maxWidth': 30, 'height': 'auto', 'lineHeight':'15px','overflowX': 'hidden', 'textOverflow': 'ellipsis'},
+                        style_cell={'textAlign':'left', 'minWidth': 95, 'width': 95},
                         style_header=dict(backgroundColor="paleturquoise"),
-                        style_data=dict(backgroundColor="lavender", whiteSpace = 'normal',height = 'auto'),
-                        style_table={'height': 300, 'width':450, 'marginTop' : 20, 'overflowX': 'scroll'},
-                        css=[{
-                                'selector': '.dash-cell div.dash-cell-value',
-                                'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
-                            }],
+                        style_data=dict(backgroundColor="lavender"),
+                        style_table={'height': 300, 'width':600, 'marginTop' : 30},
                         ),
          
     # pd.
