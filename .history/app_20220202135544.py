@@ -337,9 +337,23 @@ readme_button = html.Div([dbc.Button("Instructions", id="open-centered"),
                     is_open=False,
                     scrollable = True,
                     centered=True,
-                ),],className="p-5", style = {'float': 'right', 'margin-top': -40} )
+                ),],className="p-5", style = {'float': 'right'} )
 
-paper_button = html.Button(
+
+
+banner_description = html.Div(
+            id='intro-banner',
+            className='intro-banner',
+            style={'color': 'black',
+                   'backgroundColor': '#eef197'},
+            children=html.Div(
+                className='intro-banner-content',
+                children=[
+                    html.P(children="A CME machine learning playground to explore and train machine learning models in this application. "
+                           "The database used here is descriped in the paper Napolitano et. al. 2021. The description of the model can be found at",
+                              
+                           className='intro-banner-text'),
+                    html.Button(
                         id="Paper",
                         children=dcc.Link(html.H5(
                                     "Napolitano et al. 2021", style={"margin-top": "0px"}
@@ -354,22 +368,8 @@ paper_button = html.Button(
                             'text-align':'center'},
                             
                                 
-                            )
-
-banner_description = html.Div(
-            id='intro-banner',
-            className='intro-banner',
-            style={'color': 'black',
-                   'backgroundColor': '#eef197'},
-            children=html.Div(
-                className='intro-banner-content',
-                children=[
-                    html.P(children="A CME machine learning playground to explore and train machine learning models in this application. "
-                           "The database used here is descriped in the paper Napolitano et. al. 2021. The description of the model can be found at",
-                              
-                           className='intro-banner-text'),
-                        dbc.Row([dbc.Col(paper_button),
-                        dbc.Col(readme_button)],),
+                            ),
+                        readme_button,
                     
                         ],
                     ),

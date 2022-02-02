@@ -337,7 +337,7 @@ readme_button = html.Div([dbc.Button("Instructions", id="open-centered"),
                     is_open=False,
                     scrollable = True,
                     centered=True,
-                ),],className="p-5", style = {'float': 'right', 'margin-top': -40} )
+                ),],className="p-5", style = {'float': 'right'} )
 
 paper_button = html.Button(
                         id="Paper",

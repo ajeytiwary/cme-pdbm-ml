@@ -337,7 +337,7 @@ readme_button = html.Div([dbc.Button("Instructions", id="open-centered"),
                     is_open=False,
                     scrollable = True,
                     centered=True,
-                ),],className="p-5", style = {'float': 'right', 'margin-top': -40} )
+                ),],className="p-5", style = {'float': 'right'} )
 
 paper_button = html.Button(
                         id="Paper",
@@ -368,8 +368,8 @@ banner_description = html.Div(
                            "The database used here is descriped in the paper Napolitano et. al. 2021. The description of the model can be found at",
                               
                            className='intro-banner-text'),
-                        dbc.Row([dbc.Col(paper_button),
-                        dbc.Col(readme_button)],),
+                        dbc.Row([paper_button,
+                        readme_button],),
                     
                         ],
                     ),
