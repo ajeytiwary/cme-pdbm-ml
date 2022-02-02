@@ -339,7 +339,7 @@ readme_button = html.Div([dbc.Button("Readme", id="open-centered"),
                     centered=True,
                 ),],className="p-5", style = {'float': 'right', 'margin-top': -40} )
 
-paper_button = dbc.Button(
+paper_button = html.Button(
                         id="Paper",
                         children=dcc.Link(html.H5(
                                     "Napolitano et al. 2021", style={"margin-top": "0px"}
@@ -410,6 +410,30 @@ app.layout = dbc.Container([
             html.Div(className='four columns', children=dropdown_dataset, style={'margin-top':30},),
             banner_description,
             html.Hr(style={'margin-top':30}),
+        # dbc.Container(
+        #     [
+        #     html.Div([dbc.Button("Instructions", id="open-centered"),
+        #         dbc.Modal(
+        #             [
+        #                 dbc.ModalHeader(dbc.ModalTitle("Readme!"), close_button=True),
+        #                 dbc.ModalBody(dcc.Markdown(text_markdown), style={"width": "100%"}),
+        #                 dbc.ModalFooter(dbc.Button(
+        #                                             "Close",
+        #                                             id="close-centered",
+        #                                             className="ms-auto",
+        #                                             n_clicks=0,
+        #                                         ),
+        #                                     ),
+        #             ],
+        #             id="modal-centered",
+        #             is_open=False,
+        #             scrollable = True,
+        #             centered=True,
+        #         ),],className="p-5",),
+        #     ],
+        #     className="p-5",
+        #     )
+        
         
         dcc.Tabs( value = 'explore', children= [
                 explore_tab, 
